@@ -1,5 +1,5 @@
 {
-  "name": "wsrpc",
+  "name": "dcrpc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "discord-rpc-app": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test.js",
     "build": "pkg index.js -t node16-win-x64,node16-linux-x64,node16-macos-x64 -o dist/discord-rpc"
   },
   "keywords": [],
@@ -15,7 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "discord-rpc": "^4.0.1",
-    "pkg": "^5.8.1",
-    "ws": "^8.16.0"
+    "pkg": "^5.8.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.2.1"
   }
 }
