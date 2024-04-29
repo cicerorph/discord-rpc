@@ -50,3 +50,5 @@ app.get('/rpc/ping', (req, res) => {
 app.listen(port, () => {
     console.log(`RPC server listening at http://localhost:${port}`);
 });
+
+module.exports = app;
